@@ -56,6 +56,7 @@ namespace matematikakalk {
 	private: System::Windows::Forms::Button^ button17;
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Button^ button18;
+	private: System::Windows::Forms::Button^ button19;
 
 
 	protected:
@@ -94,6 +95,7 @@ namespace matematikakalk {
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -367,6 +369,19 @@ namespace matematikakalk {
 			this->button18->UseVisualStyleBackColor = false;
 			this->button18->Click += gcnew System::EventHandler(this, &MyForm2::button18_Click_1);
 			// 
+			// button19
+			// 
+			this->button19->BackColor = System::Drawing::Color::White;
+			this->button19->Font = (gcnew System::Drawing::Font(L"MingLiU_HKSCS-ExtB", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button19->Location = System::Drawing::Point(337, 162);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(45, 39);
+			this->button19->TabIndex = 21;
+			this->button19->Text = L"С";
+			this->button19->UseVisualStyleBackColor = false;
+			this->button19->Click += gcnew System::EventHandler(this, &MyForm2::button19_Click);
+			// 
 			// MyForm2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -374,6 +389,7 @@ namespace matematikakalk {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->ClientSize = System::Drawing::Size(520, 441);
+			this->Controls->Add(this->button19);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->button17);
 			this->Controls->Add(this->button16);
@@ -512,6 +528,9 @@ private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ 
 }
 private: System::Void button18_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	Application::Exit();
+}
+private: System::Void button19_Click(System::Object^ sender, System::EventArgs^ e) {
+	textBox1->Text = "";
 }
 };
 }
