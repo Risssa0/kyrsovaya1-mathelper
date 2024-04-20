@@ -73,7 +73,7 @@ namespace matematikakalk {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ControlLight;
-			this->label1->Location = System::Drawing::Point(-4, 9);
+			this->label1->Location = System::Drawing::Point(-4, 26);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(527, 42);
 			this->label1->TabIndex = 0;
@@ -85,7 +85,7 @@ namespace matematikakalk {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label2->Location = System::Drawing::Point(-1, 96);
+			this->label2->Location = System::Drawing::Point(-1, 102);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(441, 24);
 			this->label2->TabIndex = 1;
@@ -97,7 +97,7 @@ namespace matematikakalk {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label3->Location = System::Drawing::Point(-1, 151);
+			this->label3->Location = System::Drawing::Point(12, 152);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(323, 24);
 			this->label3->TabIndex = 2;
@@ -109,7 +109,7 @@ namespace matematikakalk {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label4->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label4->Location = System::Drawing::Point(26, 187);
+			this->label4->Location = System::Drawing::Point(53, 185);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(339, 24);
 			this->label4->TabIndex = 3;
@@ -121,7 +121,7 @@ namespace matematikakalk {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label5->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label5->Location = System::Drawing::Point(308, 220);
+			this->label5->Location = System::Drawing::Point(334, 218);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(96, 24);
 			this->label5->TabIndex = 4;
@@ -133,7 +133,7 @@ namespace matematikakalk {
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label6->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label6->Location = System::Drawing::Point(308, 264);
+			this->label6->Location = System::Drawing::Point(334, 263);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(94, 24);
 			this->label6->TabIndex = 5;
@@ -145,7 +145,7 @@ namespace matematikakalk {
 			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label7->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label7->Location = System::Drawing::Point(308, 310);
+			this->label7->Location = System::Drawing::Point(334, 314);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(84, 24);
 			this->label7->TabIndex = 6;
@@ -180,7 +180,9 @@ namespace matematikakalk {
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"MyForm3";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MyForm3";
 			this->ResumeLayout(false);
 			this->PerformLayout();

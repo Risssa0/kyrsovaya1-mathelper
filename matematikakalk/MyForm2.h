@@ -54,6 +54,8 @@ namespace matematikakalk {
 	private: System::Windows::Forms::Button^ button15;
 	private: System::Windows::Forms::Button^ button16;
 	private: System::Windows::Forms::Button^ button17;
+	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::Button^ button18;
 
 
 	protected:
@@ -90,13 +92,16 @@ namespace matematikakalk {
 			this->button15 = (gcnew System::Windows::Forms::Button());
 			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->button17 = (gcnew System::Windows::Forms::Button());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->button18 = (gcnew System::Windows::Forms::Button());
+			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox1->Location = System::Drawing::Point(23, 75);
+			this->textBox1->Location = System::Drawing::Point(23, 99);
 			this->textBox1->Multiline = true;
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(359, 32);
@@ -109,7 +114,7 @@ namespace matematikakalk {
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Tai Le", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(423, 75);
+			this->button1->Location = System::Drawing::Point(423, 99);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(85, 32);
 			this->button1->TabIndex = 1;
@@ -123,7 +128,7 @@ namespace matematikakalk {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->label1->Location = System::Drawing::Point(75, 9);
+			this->label1->Location = System::Drawing::Point(75, 32);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(364, 50);
 			this->label1->TabIndex = 2;
@@ -338,6 +343,30 @@ namespace matematikakalk {
 			this->button17->UseVisualStyleBackColor = false;
 			this->button17->Click += gcnew System::EventHandler(this, &MyForm2::button17_Click);
 			// 
+			// panel1
+			// 
+			this->panel1->Controls->Add(this->button18);
+			this->panel1->Dock = System::Windows::Forms::DockStyle::Top;
+			this->panel1->Location = System::Drawing::Point(0, 0);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(520, 31);
+			this->panel1->TabIndex = 20;
+			// 
+			// button18
+			// 
+			this->button18->BackColor = System::Drawing::Color::Red;
+			this->button18->Dock = System::Windows::Forms::DockStyle::Right;
+			this->button18->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button18->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button18->Location = System::Drawing::Point(484, 0);
+			this->button18->Name = L"button18";
+			this->button18->Size = System::Drawing::Size(36, 31);
+			this->button18->TabIndex = 0;
+			this->button18->Text = L"X";
+			this->button18->UseVisualStyleBackColor = false;
+			this->button18->Click += gcnew System::EventHandler(this, &MyForm2::button18_Click_1);
+			// 
 			// MyForm2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -345,6 +374,7 @@ namespace matematikakalk {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->ClientSize = System::Drawing::Size(520, 441);
+			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->button17);
 			this->Controls->Add(this->button16);
 			this->Controls->Add(this->button15);
@@ -364,8 +394,11 @@ namespace matematikakalk {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"MyForm2";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MyForm2";
+			this->panel1->ResumeLayout(false);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -476,6 +509,9 @@ private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ 
 private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
 	textBox1->Text += "";
 
+}
+private: System::Void button18_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	Application::Exit();
 }
 };
 }
