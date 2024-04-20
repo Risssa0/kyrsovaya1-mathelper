@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 
 namespace matematikakalk {
 
@@ -10,7 +10,7 @@ namespace matematikakalk {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm2
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm2
 	/// </summary>
 	public ref class MyForm2 : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace matematikakalk {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm2()
 		{
@@ -52,19 +52,22 @@ namespace matematikakalk {
 	private: System::Windows::Forms::Button^ button13;
 	private: System::Windows::Forms::Button^ button14;
 	private: System::Windows::Forms::Button^ button15;
+	private: System::Windows::Forms::Button^ button16;
+	private: System::Windows::Forms::Button^ button17;
+
 
 	protected:
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -85,6 +88,8 @@ namespace matematikakalk {
 			this->button13 = (gcnew System::Windows::Forms::Button());
 			this->button14 = (gcnew System::Windows::Forms::Button());
 			this->button15 = (gcnew System::Windows::Forms::Button());
+			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// textBox1
@@ -108,7 +113,7 @@ namespace matematikakalk {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(85, 32);
 			this->button1->TabIndex = 1;
-			this->button1->Text = L"Решить";
+			this->button1->Text = L"Р РµС€РёС‚СЊ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm2::button1_Click);
 			// 
@@ -122,7 +127,7 @@ namespace matematikakalk {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(364, 50);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"Арифметический";
+			this->label1->Text = L"РђСЂРёС„РјРµС‚РёС‡РµСЃРєРёР№";
 			// 
 			// button2
 			// 
@@ -306,6 +311,33 @@ namespace matematikakalk {
 			this->button15->UseVisualStyleBackColor = false;
 			this->button15->Click += gcnew System::EventHandler(this, &MyForm2::button15_Click);
 			// 
+			// button16
+			// 
+			this->button16->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
+				static_cast<System::Int32>(static_cast<System::Byte>(0)));
+			this->button16->Font = (gcnew System::Drawing::Font(L"Microsoft Tai Le", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button16->Location = System::Drawing::Point(423, 397);
+			this->button16->Name = L"button16";
+			this->button16->Size = System::Drawing::Size(85, 32);
+			this->button16->TabIndex = 18;
+			this->button16->Text = L"РќР°Р·Р°Рґ";
+			this->button16->UseVisualStyleBackColor = false;
+			this->button16->Click += gcnew System::EventHandler(this, &MyForm2::button16_Click);
+			// 
+			// button17
+			// 
+			this->button17->BackColor = System::Drawing::Color::White;
+			this->button17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button17->Location = System::Drawing::Point(84, 347);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(45, 39);
+			this->button17->TabIndex = 19;
+			this->button17->Text = L",";
+			this->button17->UseVisualStyleBackColor = false;
+			this->button17->Click += gcnew System::EventHandler(this, &MyForm2::button17_Click);
+			// 
 			// MyForm2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -313,6 +345,8 @@ namespace matematikakalk {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
 			this->ClientSize = System::Drawing::Size(520, 441);
+			this->Controls->Add(this->button17);
+			this->Controls->Add(this->button16);
 			this->Controls->Add(this->button15);
 			this->Controls->Add(this->button14);
 			this->Controls->Add(this->button13);
@@ -383,9 +417,9 @@ private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ 
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ expression = textBox1->Text;
-	int result = 0;
+	double result = 0.0;
 
-	// Определяем операцию, которая будет произведена
+	// РћРїСЂРµРґРµР»СЏРµРј РѕРїРµСЂР°С†РёСЋ, РєРѕС‚РѕСЂР°СЏ Р±СѓРґРµС‚ РїСЂРѕРёР·РІРµРґРµРЅР°
 	char operation;
 	int operatorIndex;
 	if (!expression->Contains("+") && !expression->Contains("-") && !expression->Contains("*") && !expression->Contains("/")) {
@@ -408,9 +442,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		operatorIndex = expression->IndexOf('/');
 	}
 
-	// Выполняем вычисление
-	int leftOperand = Convert::ToInt32(expression->Substring(0, operatorIndex));
-	int rightOperand = Convert::ToInt32(expression->Substring(operatorIndex + 1));
+	// Р’С‹РїРѕР»РЅСЏРµРј РІС‹С‡РёСЃР»РµРЅРёРµ
+	double leftOperand = Convert::ToDouble(expression->Substring(0, operatorIndex));
+	double rightOperand = Convert::ToDouble(expression->Substring(operatorIndex + 1));
 
 	switch (operation) {
 	case '+':
@@ -428,8 +462,20 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	}
 
 
-	// Отображаем результат на экране
+	// РћС‚РѕР±СЂР°Р¶Р°РµРј СЂРµР·СѓР»СЊС‚Р°С‚ РЅР° СЌРєСЂР°РЅРµ
 	textBox1->Text = Convert::ToString(result);
+}
+private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+	Owner->Show();
+	this->Hide();
+
+}
+private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+	textBox1->Text += ",";
+}
+private: System::Void button18_Click(System::Object^ sender, System::EventArgs^ e) {
+	textBox1->Text += "";
+
 }
 };
 }

@@ -70,7 +70,7 @@ namespace matematikakalk {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::Color::Green;
+			this->button1->BackColor = System::Drawing::SystemColors::HighlightText;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->Location = System::Drawing::Point(38, 113);
